@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #3c484e;
+  background-color: #315669;
+  color: #f4f4f4;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,11 +12,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #47555C;
+  background-color: #293136;
+  padding: 0 10px;
 }
-
 .Header a {
   text-decoration: none;
-  color: #15302C;
+  color: #ffffff;
+}
+.Header a:hover{
+  color: gray;
 }
 
 .Main {
@@ -31,6 +36,8 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
+  background-color: #47555C;
+  padding: 10px 5px;
 }
 
 .Characters-inner {
@@ -69,7 +76,7 @@ body {
   margin: 20px;
 }
 
-.Characters-item {
+.Character-item {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   border-radius: 5px;
@@ -77,25 +84,30 @@ body {
   display: block;
   animation-duration: 2s;
   animation-name: fade;
+  background-color: #78909C;
 }
 
-.Characters-item img {
+.Character-item:hover{
+  background-color: #A9CADB;
+}
+
+.Character-item img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
 }
 
-.Characters-item h2 {
+.Character-item h2 {
   font-size: 18px;
   font-weight: 300;
   padding: 5px 10px;
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 
-.Characters-item a {
+.Character-item a {
   text-decoration: none;
-  color: #026C86;
 }
 
 @keyframes fade {
